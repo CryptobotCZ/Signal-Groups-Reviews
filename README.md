@@ -8,15 +8,6 @@ and what is the reality.
 
 ## Good Groups
 
-- Binance Killers (BK)
-  - very misleading and inflated PnL reports
-  - low SL rate
-  - real expected ROI% yet to be determined
-- Fed Russian Insiders (FRI)
-  - Same as Binance Killers?
-- Bitcoin Bullets
-  - Some affiliation with BK and FRI
-
 - Bullstar
 - Coinsignals
 - Wallstreet Queen
@@ -38,6 +29,7 @@ and what is the reality.
 
 - MCW - Mega Crypto World - good, VIP Channel SMC
 - CryptoKey Club <https://t.me/crypto_key_signals>
+- The Accountant <https://t.me/TheAccountantSignals>
 
 ## Dangerous groups
 
@@ -52,6 +44,14 @@ and what is the reality.
   - on the other hand, admins are very helpful
 
 ## Bad Groups
+
+- Binance Killers (BK)
+  - very misleading and inflated PnL reports
+  - low SL rate
+  - has been lying a lot in their PnL reports lately, they lie even about number of SLs
+
+- Fed Russian Insiders (FRI)
+  - Same as Binance Killers?
 
 - Binance master
 - Scalping 300 <https://t.me/Scalping_300>
@@ -77,6 +77,8 @@ and what is the reality.
   - Probably has some affiliation with KAT Crypto Premium
 - Crypto rise
 - Medabot
+- Bitcoin Bullets
+  - Some affiliation with BK and FRI
 
 ## Tools for testing signal groups
 
