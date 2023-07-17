@@ -6,18 +6,23 @@ For good enough groups we can share a recommended cornix configuration and our m
 We can also compare their fake reports with our real experience to find out how much are the official reports misleading
 and what is the reality.
 
+<https://t.me/binancekillerschatgroup> chat group for discussion.
+
 ## Good Groups
 
 - Bullstar
 - Coinsignals
-- Wallstreet Queen <https://t.me/wallstreetqueenofficial>
 
 - Crypto Inner Circle <https://t.me/cryptoinnercircle>
+  - Average ROI yet to be determined
+  - Human made signals
   - Very well handled even dangerous market situations
   - Experienced trader
-  - Human made signals
 
 - AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
+  - Average ROI with recommended settings is 22.5% per month
+  - Human made signals
+  - Actively managed, they update the signals when situation changes
   - Results are published here: <https://www.altsignals.io/results>
   - They have the most comprehensive results report in the signal groups business.
      You can find there the entry price, all take profit targets, stoploss and reached TP / SL.
@@ -29,38 +34,53 @@ and what is the reality.
     - single entry point
     - evenly distributed TP
     - moving SL target 1
-  - Human made signals
-  - They update signals when situation changes
-  - They use SL
 
 - MCW - Mega Crypto World - good, VIP Channel SMC
 
 - CryptoKey Club <https://t.me/crypto_key_signals>
-  - expected ROI is 16% per month
+  - Expected ROI is 16% per month
+  - Human made signals
+  - Perfect community, if you wish to learn how to trade
+  - Not ready if you wish "just quick-setup cornix and forget"
 
 - The Accountant <https://t.me/TheAccountantSignals>
+
+### No Cornix Support
+
+- Wallstreet Queen <https://t.me/wallstreetqueenofficial>
+  - Expected ROI is yet to be determined
+  - Human made signals
+  - Doesn't support cornix
 
 ## Groups on the radar
 
 - Sublime
 - WCSE
   - Worse than Binance Killers
-- KAT Crypto Street <https://t.me/katcryptostreet>
+
+- KAT Crypto Premium / Street <https://t.me/katcryptostreet>
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
   - Someone says good, someone else says bad
   - Has [Copy Trading on BingX](https://bingx.com/en-us/CopyTrading/1164673816908779525/?type=&apiIdentity=1185033748341235718)
+  - Can have bad week sometime, but monthly stat is positive
+  - Use 3% per trade, and don't touch recommended settings
+  - Probably 20-30% ROI (not yet verified)
+
+- Bald&Bearded Crypto <https://dashboard.cornix.io/marketplace/group-details/13372/overview>
+  - Avg ROI 15% (with 30% per trade). Should be retested.
+  - Owner is responsive and honestly replies any questions about history.
+  - Trades SFP only. Probably, not worth to use with > 10K deposit, due to low liquidity.
+  - Current aggregated trade size is 250K, already visible on candles.
+
 - Daisy Signals Queen
   - Probably has some affiliation with KAT Crypto Premium
 - Crypto rise
-- Medabot
 - Bitcoin Bullets
   - Some affiliation with BK and FRI
 - MonoCoin VIP - Crypto Futures <https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96>
   - didn't provide logs
-- High Rollers Vip <https://dashboard.cornix.io/marketplace/group-details/5097/overview?pos=85>
-  - low profit
-  - long series of SL
 
-## Dangerous groups
+## Very lossy and dangerous groups
 
 - BitsTurtle <https://bitsturtle.com/>
   - ***!!! Doesn't use SL !!!!***
@@ -74,7 +94,20 @@ and what is the reality.
   - difficult to follow reporting - something must be followed on cornix, something on bybit, one must watch everything
   - on the other hand, admins are very helpful
 
-## Non profitable groups
+- Autotrade Futures (Alex Friedman)
+  - Default cornix config has too many SL
+  - Probably, this can be profitable, but not worth efforts
+
+- VIP futures (Alex Friedman, for manual trading)
+  - Bad experience. Not worth efforts
+
+- VIP Channel (MCW) <https://dashboard.cornix.io/marketplace/group-details/673/overview>
+  - Not sure if original.
+  - Channel data hidden behind captcha (problem with backtesting)
+  - Sometime post signals without SL
+  - Looks profitable, but with reasons above - probably worth find something different.
+
+## Low profitable groups
 
 - AltSignals High Leverage Scalping <http://altsignals.io/>
   - While the low leverage group is very good, high leverage group has been under-performing lately
@@ -87,27 +120,57 @@ and what is the reality.
     - moving SL target 1
   - BOT generated
 
+- Medabot
+  - Very responsive community
+  - ROI 4% on bad market. Positioned as "easy passive income".
+  - Once per 2 month manual work required with "halted" positions.
+
+- Scalping 300% <https://t.me/Scalping_300>
+  - The same as MCW Premium (VIP Channel)
+  - Requires limit max trades to 10 and manual renter on duplicated signals.
+  - As result - not suitable for autotrading and backtesting.
+  - While probably not lossy if follow recommendations, still not worth efforts,
+
+- CoinCodeCap https://signals.coincodecap.com/
+  - Very poor performance un april-may 2023. PNL 45%, with 6% per trade (3% ROI)
+  - They are honest, and provide logs on request, even if result is bad.
+
+- High Rollers Vip https://dashboard.cornix.io/marketplace/group-details/5097/overview
+  - Their high RR signals are spaced with long series of small losses.
+  - Not lossy, but profit is low, not worth efforts.
+
 ## Bad Groups and scammers
+
+This section contains groups with fake reports OR rejected to provide logs.
 
 - Binance Killers (BK)
   - very misleading and inflated PnL reports
-  - low SL rate
   - has been lying a lot in their PnL reports lately, they lie even about number of SLs
 
 - Fed Russian Insiders (FRI)
-  - Same as Binance Killers?
+  - Same as the Binance Killers?
 
 - Binance master
-- Scalping 300 <https://t.me/Scalping_300>
-  - same as MCW Premium (VIP Channel)
+
+- MCW premium
+  - Exact copy of Scalping 300%, but overpriced and with hidden stat in the channel
+
 - GG Shot <https://t.me/doublegtrading>
-- Alex Friedman crypto futures
+  - Scammers with fake reports. Support rejected a request for history logs before the purchase
+
 - Crypto Devil
-  - scammer, deletes SL
+  - Scammer, deletes SL
+
 - Jacob Crypto Bury <https://t.me/Jacobcryptobury_Signals>
+
+- MonoCoin VIP <https://dashboard.cornix.io/marketplace/group-details/8668/overview>
+  - Support has become silent after logs request
+
 - Fortune VIP
+
 - Fixed Leverage VIP <https://dashboard.cornix.io/marketplace/group-details/13353/overview?pos=83>
-  - scammers, fake reports
+  - scammers, fake reports (cut SL trades)
+  - also sells "CRYPTO VULTURE" VIPs with fake reports.
 
 ## Other
 
