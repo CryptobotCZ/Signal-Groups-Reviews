@@ -98,6 +98,14 @@ async function analyzeSignals(
      finalReportPath: string,
      cornixConfig?: string
 ) {
+     const runOrSkip = (shouldRun, callback) => {
+          if (shouldRun) {
+               callback();
+          } else {
+               console.log('Skipped');
+          }
+     };
+     
      const command = new Deno.Command('deno', {
           args: getDenoCommandArgs([
                'run',
@@ -113,9 +121,12 @@ async function analyzeSignals(
           ])
      });
 
+     let result = null;
      console.log("1/4 - Analyzing signal group data, parsing orders....");
-     let result = command.outputSync();
-     handleCommandError(result, 'Error when analyzing signal group data');
+     runOrSkip(args.analyze, () => {
+          result = command.outputSync();
+          handleCommandError(result, 'Error when analyzing signal group data');
+     });
 
      const firstBacktrackCmd = new Deno.Command('deno', {
           args: getDenoCommandArgs([
@@ -134,8 +145,10 @@ async function analyzeSignals(
      });
 
      console.log("2/4 - Starting first run of backtracking - collecting data...");
-     result = firstBacktrackCmd.outputSync();
-     handleCommandError(result, 'Error when running backtracking');
+     runOrSkip(args.backtrackDetailed, () => {
+          result = firstBacktrackCmd.outputSync();
+          handleCommandError(result, 'Error when running backtracking');
+     });
 
      const secondBacktrackCmd = new Deno.Command('deno', {
           args: getDenoCommandArgs([
@@ -154,8 +167,10 @@ async function analyzeSignals(
      });
 
      console.log("3/4 - Starting second run of backtracking - running with used config...");
-     secondBacktrackCmd.outputSync();
-     handleCommandError(result, 'Error when running backtracking');
+     runOrSkip(args.backtrackFinal, () => {
+          secondBacktrackCmd.outputSync();
+          handleCommandError(result, 'Error when running backtracking');
+     });
 
      const chartsBacktrackRun = new Deno.Command('deno', {
           args: getDenoCommandArgs([
@@ -173,8 +188,10 @@ async function analyzeSignals(
           ])
      });
      console.log('4/4 - Starting third run of backtracking - exporting data for charts...');
-     chartsBacktrackRun.outputSync();
-     handleCommandError(result, 'Error when running backtracking');
+     runOrSkip(args.backtrackFinal, () => {
+          chartsBacktrackRun.outputSync();
+          handleCommandError(result, 'Error when running backtracking');
+     });
 }
 
 async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string) {
@@ -229,6 +246,7 @@ async function showSupportedGroups() {
 
 await loadToolsPaths();
 
+let args = null;
 let debug = false;
 
 yargs(Deno.args)
@@ -236,6 +254,21 @@ yargs(Deno.args)
        describe: 'Show detailed debug info',
        type: 'boolean',
        default: false,
+  })
+  .option('analyze', {
+       describe: 'Analyze signals from Telegram',
+       type: 'boolean',
+       default: true,
+  })
+  .option('backtrackDetailed', {
+       describe: 'Run detailed backtracking',
+       type: 'boolean',
+       default: true,
+  })
+  .option('backtrackFinal', {
+       describe: 'Run final backtracking',
+       type: 'boolean',
+       default: true,
   })
   .command('install', 'Install crypto analysis suite', (yargs: any) => {}, async (argv: Arguments) => {
        await install();
@@ -246,6 +279,7 @@ yargs(Deno.args)
   })
   .command(['analyze <directory> <signals>'], 'Analyze group', () => {}, async (argv: any) => {
      debug = argv.debug;
+     args = argv;
      await analyzeSignalGroup(argv.directory, argv.signals);
   })
   .command(['supported-groups'], 'Show supported groups', () => {}, async (argv: any) => {
