@@ -2,11 +2,21 @@ import yargs from 'https://deno.land/x/yargs/deno.ts'
 import { Arguments } from 'https://deno.land/x/yargs/deno-types.ts'
 import * as zip from "https://deno.land/x/zip@v1.1.0/unzip.ts";
 import * as path from "https://deno.land/std/path/mod.ts";
+import * as fs from "https://deno.land/std@0.192.0/fs/mod.ts";
 import { open } from 'https://deno.land/x/open/index.ts';
 import { copy } from "https://deno.land/std@0.195.0/streams/mod.ts";
 
 
-const workspaceDirectoryName = 'analysis-workspace';
+let workspaceDirectoryName = 'analysis-workspace';
+const defaultConfig = {
+     "paths": {
+          "workspace": "./analysis-workspace",
+          "crypto-signals-analysis": "./crypto-signals-analysis",
+          "crypto-trade-backtracker": "./crypto-trade-backtracker"
+     }
+};
+
+let config = {...defaultConfig};
 
 async function install() {
      async function downloadFromGithubZip(repo: string) {
@@ -39,6 +49,25 @@ async function install() {
      console.log('Installation done!');
 }
 
+async function loadToolsPaths() {
+     const path = "analysis-config.json";
+     const isReadableFile = await fs.exists(path, {
+          isReadable: true,
+          isFile: true
+     });
+
+     if (isReadableFile) {
+          const fileContent = await Deno.readTextFile(path);
+          const data = JSON.parse(fileContent);
+          config = {
+               paths: {
+                    ...defaultConfig.paths,
+                    ...data.paths
+               }
+          };
+     }
+}
+
 async function analyzeSignals(
      signals: string,
      inputPath: string,
@@ -52,7 +81,7 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
-               './crypto-signals-analysis/main.ts',
+               `${config.paths['crypto-signals-analysis']}/main.ts`,
                'export-from-source',
                '--locale', 'cz-CZ', '--delimiter', ';',
                '--signals ', signals,
@@ -75,8 +104,8 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
-               './crypto-trade-backtracker/main.ts',
-               '--cachePath', './crypto-trade-backtracker/cache',
+               `${config.paths['crypto-trade-backtracker']}/main.ts`,
+               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
                '--fromDate', '1672534800000',
                '--downloadBinanceData',
                '--detailedLog',
@@ -98,8 +127,8 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
-               './crypto-trade-backtracker/main.ts',
-               '--cachePath', './crypto-trade-backtracker/cache',
+               `${config.paths['crypto-trade-backtracker']}/main.ts`,
+               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
                '--fromDetailedLog',
                '--delimiter', ';',
                '--outputPath', finalReportPath,
@@ -117,8 +146,8 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
-               './crypto-trade-backtracker/main.ts',
-               '--cachePath', './crypto-trade-backtracker/cache',
+               `${config.paths['crypto-trade-backtracker']}/main.ts`,
+               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
                '--fromDetailedLog',
                '--delimiter', ';',
                '--outputPath', finalReportPath.replace('.csv', '-charts.json'),
@@ -131,7 +160,7 @@ async function analyzeSignals(
 }
 
 async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string) {
-     const workspace = path.join(Deno.cwd(), workspaceDirectoryName);
+     const workspace = config.paths.workspace; // path.join(Deno.cwd(), workspaceDirectoryName);
 
      const inputPath = path.join(workspace, 'raw-data', name);
      const ordersOutputPath = path.join(workspace, 'orders', name + '-orders.json');
@@ -145,8 +174,7 @@ async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfi
 
 //
 async function runChartsServer() {
-     const workspace = path.join(Deno.cwd(), workspaceDirectoryName);
-     const chartDataPath = path.join(workspace, 'results');
+     const chartDataPath = path.join(config.paths.workspace, 'results');
 
      const chartsServer = new Deno.Command('deno', {
           args: [
@@ -154,7 +182,7 @@ async function runChartsServer() {
                '--allow-read',
                '--allow-write',
                '--allow-net',
-               './crypto-trade-backtracker/charts/server.ts',
+               `${config.paths['crypto-trade-backtracker']}/charts/server.ts`,
                'start',
                chartDataPath
           ],
@@ -174,12 +202,14 @@ async function showSupportedGroups() {
                'run',
                '--allow-read',
                '--allow-write',
-               './crypto-signals-analysis/main.ts',
+               `${config.paths['crypto-signals-analysis']}/main.ts`,
                'supported-groups'
           ]
      });
      await command.output();
 }
+
+await loadToolsPaths();
 
 yargs(Deno.args)
   .command('install', 'Install crypto analysis suite', (yargs: any) => {}, async (argv: Arguments) => {
@@ -190,7 +220,7 @@ yargs(Deno.args)
        console.log('TODO');
   })
   .command(['analyze <directory> <signals>'], 'Analyze group', () => {}, async (argv: any) => {
-       await analyzeSignalGroup(argv.directory, argv.signals);
+     await analyzeSignalGroup(argv.directory, argv.signals);
   })
   .command(['supported-groups'], 'Show supported groups', () => {}, async (argv: any) => {
      await showSupportedGroups();
