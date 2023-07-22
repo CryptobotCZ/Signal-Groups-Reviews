@@ -68,6 +68,28 @@ async function loadToolsPaths() {
      }
 }
 
+function getDenoCommandArgs(args) {
+     if (debug) {
+          console.log(args);
+     }
+     
+     return args;
+}
+
+function handleCommandError(result, errorMessage) {
+     if (result.code !== 0) {
+          console.error(errorMessage);
+
+          const outStr = new TextDecoder().decode(result.stdout);
+          console.error(outStr);
+
+          const errorStr = new TextDecoder().decode(result.stderr);
+          console.error(errorStr);
+
+          Deno.exit(1);
+     }
+}
+
 async function analyzeSignals(
      signals: string,
      inputPath: string,
@@ -77,7 +99,7 @@ async function analyzeSignals(
      cornixConfig?: string
 ) {
      const command = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
@@ -88,19 +110,15 @@ async function analyzeSignals(
                '--outputPath', ordersOutputPath,
                '--format', 'order-json',
                inputPath,
-          ]
+          ])
      });
 
      console.log("1/4 - Analyzing signal group data, parsing orders....");
      let result = command.outputSync();
-
-     if (result.code !== 0) {
-          console.error('Error when analyzing signal group data');
-          return;
-     }
+     handleCommandError(result, 'Error when analyzing signal group data');
 
      const firstBacktrackCmd = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
@@ -111,19 +129,15 @@ async function analyzeSignals(
                '--detailedLog',
                '--outputPath', intermediateOutputPath,
                ordersOutputPath,
-          ]
+          ])
      });
 
      console.log("2/4 - Starting first run of backtracking - collecting data...");
      result = firstBacktrackCmd.outputSync();
-
-     if (result.code !== 0) {
-          console.error('Error when running backtracking');
-          return;
-     }
+     handleCommandError(result, 'Error when running backtracking');
 
      const secondBacktrackCmd = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
@@ -134,15 +148,15 @@ async function analyzeSignals(
                '--outputPath', finalReportPath,
                ...(cornixConfig != null ? [ '--cornixConfig', cornixConfig] : []),
                intermediateOutputPath,
-          ]
+          ])
      });
 
      console.log("3/4 - Starting second run of backtracking - running with used config...");
      secondBacktrackCmd.outputSync();
-
+     handleCommandError(result, 'Error when running backtracking');
 
      const chartsBacktrackRun = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
@@ -153,10 +167,11 @@ async function analyzeSignals(
                '--outputPath', finalReportPath.replace('.csv', '-charts.json'),
                ...(cornixConfig != null ? [ '--cornixConfig', cornixConfig] : []),
                intermediateOutputPath,
-          ]
+          ])
      });
      console.log('4/4 - Starting third run of backtracking - exporting data for charts...');
      chartsBacktrackRun.outputSync();
+     handleCommandError(result, 'Error when running backtracking');
 }
 
 async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string) {
@@ -177,7 +192,7 @@ async function runChartsServer() {
      const chartDataPath = path.join(config.paths.workspace, 'results');
 
      const chartsServer = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
@@ -185,7 +200,7 @@ async function runChartsServer() {
                `${config.paths['crypto-trade-backtracker']}/charts/server.ts`,
                'start',
                chartDataPath
-          ],
+          ]),
           stdout: "piped",
           stderr: "piped",
      });
@@ -198,20 +213,27 @@ async function runChartsServer() {
 
 async function showSupportedGroups() {
      const command = new Deno.Command('deno', {
-          args: [
+          args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
                `${config.paths['crypto-signals-analysis']}/main.ts`,
                'supported-groups'
-          ]
+          ])
      });
      await command.output();
 }
 
 await loadToolsPaths();
 
+let debug = false;
+
 yargs(Deno.args)
+  .option('debug', {
+       describe: 'Show detailed debug info',
+       type: 'boolean',
+       default: false,
+  })
   .command('install', 'Install crypto analysis suite', (yargs: any) => {}, async (argv: Arguments) => {
        await install();
   })
@@ -220,12 +242,15 @@ yargs(Deno.args)
        console.log('TODO');
   })
   .command(['analyze <directory> <signals>'], 'Analyze group', () => {}, async (argv: any) => {
+     debug = argv.debug;
      await analyzeSignalGroup(argv.directory, argv.signals);
   })
   .command(['supported-groups'], 'Show supported groups', () => {}, async (argv: any) => {
+     debug = argv.debug;
      await showSupportedGroups();
   })
   .command('charts', 'Show charts from finished analysis', (yargs: any) => { }, async (argv: Arguments) => {
+     debug = argv.debug;
      await runChartsServer();
   })
   .strictCommands()
