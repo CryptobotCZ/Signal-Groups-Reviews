@@ -5,6 +5,8 @@ Step by step guide how to do backtracking and signal group analysis.
 0. Prerequisites - there is just one requirement - [deno](https://deno.land/).
 
 1. Prepare your workspace by running `deno run --allow-all analysis.ts install`
+   You can run analysis.ts directly from github: `deno run --allow-all https://raw.githubusercontent.com/CryptobotCZ/Signal-Groups-Reviews/master/analysis.ts install`
+   or you can download the script and run it locally (I would recommend that).
 
    This will download required tools and create a `analysis-workspace` directory.
 
