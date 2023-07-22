@@ -195,7 +195,7 @@ async function analyzeSignals(
 }
 
 async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string) {
-     const workspace = config.paths.workspace; // path.join(Deno.cwd(), workspaceDirectoryName);
+     const workspace = path.resolve(config.paths.workspace); // path.join(Deno.cwd(), workspaceDirectoryName);
 
      const inputPath = path.join(workspace, 'raw-data', name);
      const ordersOutputPath = path.join(workspace, 'orders', name + '-orders.json');
