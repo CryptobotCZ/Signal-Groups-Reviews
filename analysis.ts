@@ -31,13 +31,13 @@ async function install() {
      }
 
      async function prepareWorkingDirectory() {
-     console.log('Preparing working directory...');
+          console.log('Preparing working directory...');
 
-     await Deno.mkdir(path.join(workspaceDirectoryName, 'cornix-config'), { recursive: true });
-     await Deno.mkdir(path.join(workspaceDirectoryName, 'orders'), { recursive: true });
-     await Deno.mkdir(path.join(workspaceDirectoryName, 'raw-data'), { recursive: true });
-     await Deno.mkdir(path.join(workspaceDirectoryName, 'pre-processed'), { recursive: true });
-     await Deno.mkdir(path.join(workspaceDirectoryName, 'results'), { recursive: true });
+          await Deno.mkdir(path.join(workspaceDirectoryName, 'cornix-config'), { recursive: true });
+          await Deno.mkdir(path.join(workspaceDirectoryName, 'orders'), { recursive: true });
+          await Deno.mkdir(path.join(workspaceDirectoryName, 'raw-data'), { recursive: true });
+          await Deno.mkdir(path.join(workspaceDirectoryName, 'pre-processed'), { recursive: true });
+          await Deno.mkdir(path.join(workspaceDirectoryName, 'results'), { recursive: true });
      }
 
      console.log('Crypto signal analysis - installation');
@@ -72,21 +72,34 @@ function getDenoCommandArgs(args) {
      if (debug) {
           console.log(args);
      }
-     
+
      return args;
+}
+
+function readCommandOutput(result, output = 'stdout') {
+     const stream = output === 'stdout' ? result.stdout : result.stderr;
+     const outStr = new TextDecoder().decode(result.stdout);
+
+     return outStr;
 }
 
 function handleCommandError(result, errorMessage) {
      if (result.code !== 0) {
           console.error(errorMessage);
 
-          const outStr = new TextDecoder().decode(result.stdout);
+          const outStr = readCommandOutput(result);
           console.error(outStr);
 
-          const errorStr = new TextDecoder().decode(result.stderr);
+          const errorStr = readCommandOutput(result, 'stderr');
           console.error(errorStr);
 
           Deno.exit(1);
+     }
+}
+
+function handleCommandOutput(result) {
+     if (debug) {
+          console.log(readCommandOutput(result));
      }
 }
 
@@ -105,12 +118,13 @@ async function analyzeSignals(
                console.log('Skipped');
           }
      };
-     
+
      const command = new Deno.Command('deno', {
           args: getDenoCommandArgs([
                'run',
                '--allow-read',
                '--allow-write',
+               "--allow-net",
                `${config.paths['crypto-signals-analysis']}/main.ts`,
                'export-from-source',
                '--locale', 'cz-CZ', '--delimiter', ';',
@@ -126,6 +140,7 @@ async function analyzeSignals(
      runOrSkip(args.analyze, () => {
           result = command.outputSync();
           handleCommandError(result, 'Error when analyzing signal group data');
+          handleCommandOutput(result);
      });
 
      const firstBacktrackCmd = new Deno.Command('deno', {
@@ -133,6 +148,7 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
+               "--allow-net",
                `${config.paths['crypto-trade-backtracker']}/main.ts`,
                'backtrack',
                '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
@@ -148,6 +164,7 @@ async function analyzeSignals(
      runOrSkip(args.backtrackDetailed, () => {
           result = firstBacktrackCmd.outputSync();
           handleCommandError(result, 'Error when running backtracking');
+          handleCommandOutput(result);
      });
 
      const secondBacktrackCmd = new Deno.Command('deno', {
@@ -155,6 +172,7 @@ async function analyzeSignals(
                'run',
                '--allow-read',
                '--allow-write',
+               "--allow-net",
                `${config.paths['crypto-trade-backtracker']}/main.ts`,
                'backtrack',
                '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
@@ -170,6 +188,7 @@ async function analyzeSignals(
      runOrSkip(args.backtrackFinal, () => {
           secondBacktrackCmd.outputSync();
           handleCommandError(result, 'Error when running backtracking');
+          handleCommandOutput(result);
      });
 
      const chartsBacktrackRun = new Deno.Command('deno', {
@@ -191,6 +210,7 @@ async function analyzeSignals(
      runOrSkip(args.backtrackFinal, () => {
           chartsBacktrackRun.outputSync();
           handleCommandError(result, 'Error when running backtracking');
+          handleCommandOutput(result);
      });
 }
 
