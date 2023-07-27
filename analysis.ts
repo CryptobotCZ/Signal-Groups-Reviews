@@ -4,7 +4,7 @@ import * as zip from "https://deno.land/x/zip@v1.1.0/unzip.ts";
 import * as path from "https://deno.land/std/path/mod.ts";
 import * as fs from "https://deno.land/std@0.192.0/fs/mod.ts";
 import { open } from 'https://deno.land/x/open/index.ts';
-import { copy } from "https://deno.land/std@0.195.0/streams/mod.ts";
+import realPath = Deno.realPath;
 
 
 let workspaceDirectoryName = 'analysis-workspace';
@@ -103,6 +103,14 @@ function handleCommandOutput(result) {
      }
 }
 
+async function getAbsPath(path: string) {
+     try {
+          return await realPath(path);
+     } catch (error) {
+          return null;
+     }
+}
+
 async function analyzeSignals(
      signals: string,
      inputPath: string,
@@ -111,6 +119,9 @@ async function analyzeSignals(
      finalReportPath: string,
      cornixConfig?: string
 ) {
+     const cornixConfigAbsPath = cornixConfig != null ? await getAbsPath(cornixConfig) : null;
+     const cornixConfigArg = cornixConfigAbsPath != null ? ['--cornixConfig', cornixConfigAbsPath] : [];
+
      const runOrSkip = (shouldRun, callback) => {
           if (shouldRun) {
                callback();
@@ -155,6 +166,7 @@ async function analyzeSignals(
                '--fromDate', '1672534800000',
                '--downloadBinanceData',
                '--detailedLog',
+              ...cornixConfigArg,
                '--outputPath', intermediateOutputPath,
                ordersOutputPath,
           ])
@@ -179,7 +191,7 @@ async function analyzeSignals(
                '--fromDetailedLog',
                '--delimiter', ';',
                '--outputPath', finalReportPath,
-               ...(cornixConfig != null ? [ '--cornixConfig', cornixConfig] : []),
+               ...cornixConfigArg,
                intermediateOutputPath,
           ])
      });
@@ -202,7 +214,7 @@ async function analyzeSignals(
                '--fromDetailedLog',
                '--delimiter', ';',
                '--outputPath', finalReportPath.replace('.csv', '-charts.json'),
-               ...(cornixConfig != null ? [ '--cornixConfig', cornixConfig] : []),
+               ...cornixConfigArg,
                intermediateOutputPath,
           ])
      });
