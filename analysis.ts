@@ -287,8 +287,9 @@ yargs(Deno.args)
        type: 'boolean',
        default: false,
   })
-  .option('analyze', {
-       describe: 'Analyze signals from Telegram',
+  .option('parse', {
+       alias: 'analyze',
+       describe: 'Parse signals from Telegram',
        type: 'boolean',
        default: true,
   })
@@ -322,6 +323,7 @@ yargs(Deno.args)
      debug = argv.debug;
      await runChartsServer();
   })
+  .demandCommand(1)
   .strictCommands()
   .version('version', '0.0.1').alias('version', 'V')
   .argv;
