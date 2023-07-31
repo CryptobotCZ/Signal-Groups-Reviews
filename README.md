@@ -48,7 +48,8 @@ and what is the reality.
 ### No Cornix Support
 
 - Wallstreet Queen <https://t.me/wallstreetqueenofficial>
-  - Expected ROI is yet to be determined
+  - ROI is about 18% per month with 5% invested per signal
+  - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/wallstreet-queen-results.csv))
   - Human made signals
   - Doesn't support cornix
 
@@ -73,12 +74,23 @@ and what is the reality.
   - Current aggregated trade size is 250K, already visible on candles.
 
 - Daisy Signals Queen
-  - Probably has some affiliation with KAT Crypto Premium
 - Crypto rise
 - Bitcoin Bullets
   - Some affiliation with BK and FRI
 - MonoCoin VIP - Crypto Futures <https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96>
   - didn't provide logs
+
+- RNMKR Free <https://t.me/RNMKRFREE>
+  - Avg ROI depends on used strategy and investment per signal
+  - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/rnmkr-free-results.csv))
+  - Can have very long series of SL (investment strategy needs to count with that, so very small amount should be invested per trade)
+  - Good R:R ratio so single profitable trade can compensate multiple SLs
+  - Free sample of RNMKR VIP
+  - Admin provides logs on asking, communicates and is very helpful
+  - Works together with 8bit Algoz and Pablo's Crypto Club
+  - It is evolution of High Rollers group
+  - New algorithm was deployed on July 12th
+  - Algorithmically generated signals
 
 ## Very lossy and dangerous groups
 
