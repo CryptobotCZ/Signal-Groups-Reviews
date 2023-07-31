@@ -1,0 +1,12 @@
+﻿{
+  "amount": 100,
+  "entryType": "zone",
+  "entryZoneTargets": 4,
+  "entries": "Evenly Divided",
+  "tps": "Evenly Divided",
+  "trailingStop": {
+    "type": "breakeven",
+    "triggerType": "target",
+    "trigger": 1
+  }
+}
