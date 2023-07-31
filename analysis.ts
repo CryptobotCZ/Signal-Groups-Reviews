@@ -70,7 +70,8 @@ async function loadToolsPaths() {
 
 function getDenoCommandArgs(args) {
      if (debug) {
-          console.log(args);
+          const joinedArgs = ["deno", ...args ].join(" ");
+          console.log(joinedArgs);
      }
 
      return args;
@@ -120,7 +121,7 @@ async function analyzeSignals(
      cornixConfig?: string
 ) {
      const cornixConfigAbsPath = cornixConfig != null ? await getAbsPath(cornixConfig) : null;
-     const cornixConfigArg = cornixConfigAbsPath != null ? ['--cornixConfig', cornixConfigAbsPath] : [];
+     const cornixConfigArg = cornixConfigAbsPath != null ? ['--cornixConfigFile', cornixConfigAbsPath] : [];
 
      const runOrSkip = (shouldRun, callback) => {
           if (shouldRun) {
@@ -130,96 +131,95 @@ async function analyzeSignals(
           }
      };
 
-     const command = new Deno.Command('deno', {
-          args: getDenoCommandArgs([
-               'run',
-               '--allow-read',
-               '--allow-write',
-               "--allow-net",
-               `${config.paths['crypto-signals-analysis']}/main.ts`,
-               'export-from-source',
-               '--locale', 'cz-CZ', '--delimiter', ';',
-               '--signals ', signals,
-               '--outputPath', ordersOutputPath,
-               '--format', 'order-json',
-               inputPath,
-          ])
-     });
-
      let result = null;
      console.log("1/4 - Analyzing signal group data, parsing orders....");
      runOrSkip(args.analyze, () => {
+          const command = new Deno.Command('deno', {
+               args: getDenoCommandArgs([
+                    'run',
+                    '--allow-read',
+                    '--allow-write',
+                    "--allow-net",
+                    `${config.paths['crypto-signals-analysis']}/main.ts`,
+                    'export-from-source',
+                    '--locale', 'cz-CZ', '--delimiter', '";"',
+                    '--signals', signals,
+                    '--outputPath', ordersOutputPath,
+                    '--format', 'order-json',
+                    inputPath,
+               ])
+          });
+
           result = command.outputSync();
           handleCommandError(result, 'Error when analyzing signal group data');
           handleCommandOutput(result);
      });
 
-     const firstBacktrackCmd = new Deno.Command('deno', {
-          args: getDenoCommandArgs([
-               'run',
-               '--allow-read',
-               '--allow-write',
-               "--allow-net",
-               `${config.paths['crypto-trade-backtracker']}/main.ts`,
-               'backtrack',
-               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
-               '--fromDate', '1672534800000',
-               '--downloadBinanceData',
-               '--detailedLog',
-              ...cornixConfigArg,
-               '--outputPath', intermediateOutputPath,
-               ordersOutputPath,
-          ])
-     });
-
      console.log("2/4 - Starting first run of backtracking - collecting data...");
      runOrSkip(args.backtrackDetailed, () => {
+          const firstBacktrackCmd = new Deno.Command('deno', {
+               args: getDenoCommandArgs([
+                    'run',
+                    '--allow-read',
+                    '--allow-write',
+                    "--allow-net",
+                    `${config.paths['crypto-trade-backtracker']}/main.ts`,
+                    'backtrack',
+                    '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
+                    '--fromDate', '1672534800000',
+                    '--downloadBinanceData',
+                    '--detailedLog',
+                   ...cornixConfigArg,
+                    '--outputPath', intermediateOutputPath,
+                    ordersOutputPath,
+               ])
+          });
+
           result = firstBacktrackCmd.outputSync();
           handleCommandError(result, 'Error when running backtracking');
           handleCommandOutput(result);
      });
 
-     const secondBacktrackCmd = new Deno.Command('deno', {
-          args: getDenoCommandArgs([
-               'run',
-               '--allow-read',
-               '--allow-write',
-               "--allow-net",
-               `${config.paths['crypto-trade-backtracker']}/main.ts`,
-               'backtrack',
-               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
-               '--fromDetailedLog',
-               '--delimiter', ';',
-               '--outputPath', finalReportPath,
-               ...cornixConfigArg,
-               intermediateOutputPath,
-          ])
-     });
-
      console.log("3/4 - Starting second run of backtracking - running with used config...");
      runOrSkip(args.backtrackFinal, () => {
+          const secondBacktrackCmd = new Deno.Command('deno', {
+               args: getDenoCommandArgs([
+                    'run',
+                    '--allow-read',
+                    '--allow-write',
+                    "--allow-net",
+                    `${config.paths['crypto-trade-backtracker']}/main.ts`,
+                    'backtrack',
+                    '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
+                    '--fromDetailedLog',
+                    '--delimiter', '";"',
+                    '--outputPath', finalReportPath,
+                    ...cornixConfigArg,
+                    intermediateOutputPath,
+               ])
+          });
           secondBacktrackCmd.outputSync();
           handleCommandError(result, 'Error when running backtracking');
           handleCommandOutput(result);
      });
 
-     const chartsBacktrackRun = new Deno.Command('deno', {
-          args: getDenoCommandArgs([
-               'run',
-               '--allow-read',
-               '--allow-write',
-               `${config.paths['crypto-trade-backtracker']}/main.ts`,
-               'backtrack',
-               '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
-               '--fromDetailedLog',
-               '--delimiter', ';',
-               '--outputPath', finalReportPath.replace('.csv', '-charts.json'),
-               ...cornixConfigArg,
-               intermediateOutputPath,
-          ])
-     });
      console.log('4/4 - Starting third run of backtracking - exporting data for charts...');
      runOrSkip(args.backtrackFinal, () => {
+          const chartsBacktrackRun = new Deno.Command('deno', {
+               args: getDenoCommandArgs([
+                    'run',
+                    '--allow-read',
+                    '--allow-write',
+                    `${config.paths['crypto-trade-backtracker']}/main.ts`,
+                    'backtrack',
+                    '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
+                    '--fromDetailedLog',
+                    '--delimiter', '";"',
+                    '--outputPath', finalReportPath.replace('.csv', '-charts.json'),
+                    ...cornixConfigArg,
+                    intermediateOutputPath,
+               ])
+          });
           chartsBacktrackRun.outputSync();
           handleCommandError(result, 'Error when running backtracking');
           handleCommandOutput(result);
@@ -236,7 +236,7 @@ async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfi
 
      cornixConfigPath ??= path.join(workspace, 'cornix-config', name + '-cornix-config.json');
 
-     await analyzeSignals(signals, inputPath, ordersOutputPath, intermediateOutputPath, finalReportPath, cornixConfigPath);
+     await analyzeSignals(signals.trim(), inputPath, ordersOutputPath, intermediateOutputPath, finalReportPath, cornixConfigPath);
 }
 
 //
