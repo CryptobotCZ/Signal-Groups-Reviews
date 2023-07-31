@@ -19,22 +19,6 @@ and what is the reality.
   - Very well handled even dangerous market situations
   - Experienced trader
 
-- AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
-  - Average ROI with recommended settings is 22.5% per month
-  - Human made signals
-  - Actively managed, they update the signals when situation changes
-  - Results are published here: <https://www.altsignals.io/results>
-  - They have the most comprehensive results report in the signal groups business.
-     You can find there the entry price, all take profit targets, stoploss and reached TP / SL.
-  - They overshoot their results as everyone else does
-  - But they are profitable and they have been pretty much all the time
-  - Average ROI of signals is about 450% per month, total ROI is depending on actual investment and the risk management
-  - Recommended investment is 5% per signal - in that case, ROI is 22.5% per month
-  - Estimated ROI number is calculated based on following configuration:
-    - single entry point
-    - evenly distributed TP
-    - moving SL target 1
-
 - MCW - Mega Crypto World - good, VIP Channel SMC
 
 - CryptoKey Club <https://t.me/crypto_key_signals>
@@ -120,6 +104,23 @@ and what is the reality.
   - Looks profitable, but with reasons above - probably worth find something different.
 
 ## Low profitable groups
+
+- AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
+  - Average ROI with recommended settings is ~~22.5%~~ to be determined (previous value was based on incorrect analysis)
+  - Human made signals
+  - Actively managed, they update the signals when situation changes
+  - Results are published here: <https://www.altsignals.io/results>
+  - They have the most comprehensive results report in the signal groups business.
+    You can find there the entry price, all take profit targets, stoploss and reached TP / SL.
+  - They overshoot their results as everyone else does
+  - But they are profitable and they have been pretty much all the time
+  - Average ROI of signals is about 450% per month, total ROI is depending on actual investment and the risk management
+  - Recommended investment is 5% per signal - in that case, ROI is 22.5% per month
+  - Estimated ROI number is calculated based on following configuration:
+    - single entry point
+    - evenly distributed TP
+    - moving SL target 1
+  - Is under-performing lately
 
 - AltSignals High Leverage Scalping <http://altsignals.io/>
   - While the low leverage group is very good, high leverage group has been under-performing lately
