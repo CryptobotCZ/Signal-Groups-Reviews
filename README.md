@@ -159,8 +159,15 @@ and what is the reality.
 This section contains groups with fake reports OR rejected to provide logs.
 
 - Binance Killers (BK)
-  - very misleading and inflated PnL reports
-  - has been lying a lot in their PnL reports lately, they lie even about number of SLs
+  - ROI is about 13% per month with 5% invested per signal with fine tuned cornix config
+  - Average PnL of signals is 260% per month (based on [backtracking](./results/backtracking/bk-results.csv)) 
+    with [following cornix config](./results/cornix-config/bk-cornix-config.json)
+  - With usually used cornix config (Evenly distributed targets, Moving SL after target 1), PnL is smaller - 140% and ROI as well - 7%
+  - 3 of the last 7 months lossy, average monthly loss of signals for these 3 months is 88%, -4.4% ROI
+  - Very misleading and inflated PnL reports
+  - Has been lying a lot in their PnL reports lately, they lie even about number of SLs
+  - Very long term oriented, signals can be open for several months
+
 
 - Fed Russian Insiders (FRI)
   - Same as the Binance Killers?
