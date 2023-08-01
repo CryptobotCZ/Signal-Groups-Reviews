@@ -240,7 +240,7 @@ async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfi
 }
 
 //
-async function runChartsServer() {
+async function runChartsServer(port?: number) {
      const chartDataPath = path.join(config.paths.workspace, 'results');
 
      const chartsServer = new Deno.Command('deno', {
@@ -251,6 +251,7 @@ async function runChartsServer() {
                '--allow-net',
                `${config.paths['crypto-trade-backtracker']}/charts/server.ts`,
                'start',
+               ...(port ? ['--port', port] : []),
                chartDataPath
           ]),
           stdout: "piped",
@@ -260,7 +261,7 @@ async function runChartsServer() {
      const chartsServerProcess = chartsServer.spawn();
 
      console.log('Opening web browser...');
-     await open('http://localhost:8080');
+     await open(`http://localhost:${port}`);
 }
 
 async function showSupportedGroups() {
@@ -319,9 +320,16 @@ yargs(Deno.args)
      debug = argv.debug;
      await showSupportedGroups();
   })
-  .command('charts', 'Show charts from finished analysis', (yargs: any) => { }, async (argv: Arguments) => {
+  .command('charts', 'Show charts from finished analysis', (yargs: any) => {
+     yargs.option('port', {
+            describe: 'Server port',
+            type: 'number',
+            default: 8080,
+       })
+       
+  }, async (argv: Arguments) => {
      debug = argv.debug;
-     await runChartsServer();
+     await runChartsServer(argv.port);
   })
   .demandCommand(1)
   .strictCommands()
