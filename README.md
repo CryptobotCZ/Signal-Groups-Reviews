@@ -121,6 +121,8 @@ and what is the reality.
     - evenly distributed TP
     - moving SL target 1
   - Is under-performing lately
+  - [Backtracking results are here](./results/backtracking/altsignals-results.csv), but it needs to be taken with huge grain of salt.
+    They are difficult to backtrack as they don't just cancel the invalid signals, but they also change leverage or sometimes even TP.
 
 - AltSignals High Leverage Scalping <http://altsignals.io/>
   - While the low leverage group is very good, high leverage group has been under-performing lately
