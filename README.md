@@ -13,25 +13,32 @@ and what is the reality.
 - Bullstar
 - Coinsignals
 
-- Crypto Inner Circle <https://t.me/cryptoinnercircle>
+- Crypto Inner Circle 
+  - [Public Telegram Channel](https://t.me/cryptoinnercircle)
+  - [Admin - CIC Alex](https://t.me/cicalex)
   - Average ROI yet to be determined
   - Human made signals
   - Very well handled even dangerous market situations
   - Experienced trader
 
-- MCW - Mega Crypto World - good, VIP Channel SMC
-
-- CryptoKey Club <https://t.me/crypto_key_signals>
+- CryptoKey Club
+  - [Public Telegram Channel](https://t.me/crypto_key_signals)
+  - [Admin - CryptoJay](https://t.me/JayTech0)
   - Expected ROI is 16% per month
   - Human made signals
   - Perfect community, if you wish to learn how to trade
   - Not ready if you wish "just quick-setup cornix and forget"
 
-- The Accountant <https://t.me/TheAccountantSignals>
+- The Accountant
+  - [Public Telegram Channel](https://t.me/TheAccountantSignals)
+  - [Admin - The Accountant](https://t.me/BigBedTrader)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/26785/overview)
 
 ### No Cornix Support
 
-- Wallstreet Queen <https://t.me/wallstreetqueenofficial>
+- Wallstreet Queen 
+  - [Public Telegram Channel](https://t.me/wallstreetqueenofficial)
+  - [Admin - Wall Street Queen](https://t.me/wallstreetqueenadmin)
   - ROI is about 18% per month with 5% invested per signal
   - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/wallstreet-queen-results.csv))
   - Human made signals
@@ -43,28 +50,43 @@ and what is the reality.
 - WCSE
   - Worse than Binance Killers
 
-- KAT Crypto Premium / Street <https://t.me/katcryptostreet>
+- KAT Crypto Premium / Street
+  - [Public Telegram Channel](https://t.me/katcryptostreet)
+  - [Admin - KATadmin1](https://t.me/KATadmin1)
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
-  - Someone says good, someone else says bad
   - Has [Copy Trading on BingX](https://bingx.com/en-us/CopyTrading/1164673816908779525/?type=&apiIdentity=1185033748341235718)
   - Can have bad week sometime, but monthly stat is positive
   - Use 3% per trade, and don't touch recommended settings
   - Probably 20-30% ROI (not yet verified)
+  - Admin communicates very well, is even part of our group chat
+  - Provides cornix logs on asking
 
-- Bald&Bearded Crypto <https://dashboard.cornix.io/marketplace/group-details/13372/overview>
+- Bald&Bearded Crypto
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/13372/overview)
   - Avg ROI 15% (with 30% per trade). Should be retested.
   - Owner is responsive and honestly replies any questions about history.
   - Trades SFP only. Probably, not worth to use with > 10K deposit, due to low liquidity.
   - Current aggregated trade size is 250K, already visible on candles.
 
-- Daisy Signals Queen
 - Crypto rise
 - Bitcoin Bullets
   - Some affiliation with BK and FRI
-- MonoCoin VIP - Crypto Futures <https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96>
+
+- MonoCoin VIP - Crypto Futures
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
   - didn't provide logs
 
-- RNMKR Free <https://t.me/RNMKRFREE>
+- High Rollers Vip
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/5097/overview)
+  - [Admin - Masta](https://t.me/Masta_Gee)
+  - Their high RR signals are spaced with long series of small losses.
+  - Good R:R ratio so single profitable trade can compensate multiple SLs
+
+- RNMKR Free
+  - [Public Telegram Channel](https://t.me/RNMKRFREE)
+  - [Telegram BOT](https://t.me/RNMKRBot)
+  - [Admin - Masta](https://t.me/Masta_Gee)
+  - [The Trading Metrics - public results](https://thetradingmetrics.io/product/rnmkr)
   - Avg ROI depends on used strategy and investment per signal
   - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/rnmkr-free-results.csv))
   - Can have very long series of SL (investment strategy needs to count with that, so very small amount should be invested per trade)
@@ -76,9 +98,17 @@ and what is the reality.
   - New algorithm was deployed on July 12th
   - Algorithmically generated signals
 
+- 8Bit algoz
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/15160/overview)
+
 ## Very lossy and dangerous groups
 
-- BitsTurtle <https://bitsturtle.com/>
+- BitsTurtle 
+  - [Official website](https://bitsturtle.com)
+  - [Public Telegram Channel](https://t.me/bitsturtle_community)
+  - [Telegram BOT](https://t.me/bitsturtle_bot)
+  - [Admin - Ayush](https://t.me/ayushagr14)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/19651/overview)
   - ***!!! Doesn't use SL !!!!***
   - promises to make about 10% ROI
   - in a good market conditions, it works
@@ -97,7 +127,8 @@ and what is the reality.
 - VIP futures (Alex Friedman, for manual trading)
   - Bad experience. Not worth efforts
 
-- VIP Channel (MCW) <https://dashboard.cornix.io/marketplace/group-details/673/overview>
+- VIP Channel (MCW)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/673/overview)
   - Not sure if original.
   - Channel data hidden behind captcha (problem with backtesting)
   - Sometime post signals without SL
@@ -149,10 +180,6 @@ and what is the reality.
 - CoinCodeCap https://signals.coincodecap.com/
   - Very poor performance un april-may 2023. PNL 45%, with 6% per trade (3% ROI)
   - They are honest, and provide logs on request, even if result is bad.
-
-- High Rollers Vip https://dashboard.cornix.io/marketplace/group-details/5097/overview
-  - Their high RR signals are spaced with long series of small losses.
-  - Not lossy, but profit is low, not worth efforts.
 
 ## Bad Groups and scammers
 
