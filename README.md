@@ -6,14 +6,68 @@ For good enough groups we can share a recommended cornix configuration and our m
 We can also compare their fake reports with our real experience to find out how much are the official reports misleading
 and what is the reality.
 
-<https://t.me/binancekillerschatgroup> chat group for discussion.
+<https://t.me/cornixcommunity> chat group for discussion.
 
 ## Good Groups
 
-- Bullstar
-- Coinsignals
+- KAT Crypto Premium / Street
+  - [Public Telegram Channel](https://t.me/katcryptostreet)
+  - [Admin - KATadmin1](https://t.me/KATadmin1)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
+  - Has [Copy Trading on BingX](https://bingx.com/en-us/CopyTrading/1164673816908779525/?type=&apiIdentity=1185033748341235718)
+  - Can have bad week sometime, but monthly stat is positive
+  - Use 3% per trade, and don't touch recommended settings
+  - Probably 20-30% ROI (not yet verified)
+  - Admin communicates very well, is even part of our group chat
+  - Provides cornix logs on asking
 
-- Crypto Inner Circle 
+- Moonraker
+  - [Public Telegram Channel](https://t.me/MoonrakerCryptoLITE)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/3435/overview)
+  - [Copy Trading on ByBit](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=UMuwFxr5CFlWFtaThxZwMg%3D%3D)
+  - [Copy Trading on ByBit - Special Grid BOT](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=gXlZuUW4DR2rKxcJa6iARw%3D%3D)
+  - [Admin - MoonrakerCosmo](https://t.me/MoonrakerCosmo)
+
+- High Rollers Vip
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/5097/overview)
+  - [Admin - Masta](https://t.me/Masta_Gee)
+  - Their high RR signals are spaced with long series of small losses.
+  - Good R:R ratio so single profitable trade can compensate multiple SLs
+
+- RNMKR
+  - [Public Free Telegram Channel](https://t.me/RNMKRFREE)
+  - [Telegram BOT](https://t.me/RNMKRBot)
+  - [Admin - Masta](https://t.me/Masta_Gee)
+  - [The Trading Metrics - public results](https://thetradingmetrics.io/product/rnmkr)
+  - Avg ROI of VIP channel 20%+
+  - Recommended settings for high capital is taking all signals with 0.25% each, for lower capital using the Golden Pocket channel with Hedge disabled
+  - Average PnL of free channel signals is 373% per month (based on [backtracking](./results/backtracking/rnmkr-free-results.csv))
+  - Can have very long series of SL (investment strategy needs to count with that, so very small amount should be invested per trade)
+  - Free channel is a sample of RNMKR VIP
+  - Good R:R ratio so single profitable trade can compensate multiple SLs
+  - Admin provides logs on asking, communicates and is very helpful
+  - Works together with 8bit Algoz and Pablo's Crypto Club
+  - It is an evolution of High Rollers group
+  - New algorithm was deployed on July 12th
+  - Algorithmically generated signals
+
+- 8Bit algoz
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/15160/overview)
+
+- Pablo's Crypto Club
+  - [Telegram Bot](https://t.me/PablosCryptobot)
+  - Pablo is working together with Masta and 8Bit Algoz
+  - From time to time he runs 100-1000 challenge
+  - He is focused on trading education
+
+- Orchid
+  - [Public Telegram Channel](https://t.me/OrchidAcademy)
+  - [Telegram Support - Orchid](https://t.me/orchidvip)
+  - [Copy Trading on Bitget](https://www.bitget.com/copytrading/trader/bbb64c7586b23c5fa09d/futures)
+  - Offers 3 days trial
+  - Posts some signals also to the public channel
+
+- Crypto Inner Circle
   - [Public Telegram Channel](https://t.me/cryptoinnercircle)
   - [Admin - CIC Alex](https://t.me/cicalex)
   - Average ROI yet to be determined
@@ -34,9 +88,12 @@ and what is the reality.
   - [Admin - The Accountant](https://t.me/BigBedTrader)
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/26785/overview)
 
+- Bullstar
+- Coinsignals
+
 ### No Cornix Support
 
-- Wallstreet Queen 
+- Wallstreet Queen
   - [Public Telegram Channel](https://t.me/wallstreetqueenofficial)
   - [Admin - Wall Street Queen](https://t.me/wallstreetqueenadmin)
   - ROI is about 18% per month with 5% invested per signal
@@ -49,17 +106,6 @@ and what is the reality.
 - Sublime
 - WCSE
   - Worse than Binance Killers
-
-- KAT Crypto Premium / Street
-  - [Public Telegram Channel](https://t.me/katcryptostreet)
-  - [Admin - KATadmin1](https://t.me/KATadmin1)
-  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
-  - Has [Copy Trading on BingX](https://bingx.com/en-us/CopyTrading/1164673816908779525/?type=&apiIdentity=1185033748341235718)
-  - Can have bad week sometime, but monthly stat is positive
-  - Use 3% per trade, and don't touch recommended settings
-  - Probably 20-30% ROI (not yet verified)
-  - Admin communicates very well, is even part of our group chat
-  - Provides cornix logs on asking
 
 - Bald&Bearded Crypto
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/13372/overview)
@@ -76,34 +122,9 @@ and what is the reality.
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
   - didn't provide logs
 
-- High Rollers Vip
-  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/5097/overview)
-  - [Admin - Masta](https://t.me/Masta_Gee)
-  - Their high RR signals are spaced with long series of small losses.
-  - Good R:R ratio so single profitable trade can compensate multiple SLs
-
-- RNMKR Free
-  - [Public Telegram Channel](https://t.me/RNMKRFREE)
-  - [Telegram BOT](https://t.me/RNMKRBot)
-  - [Admin - Masta](https://t.me/Masta_Gee)
-  - [The Trading Metrics - public results](https://thetradingmetrics.io/product/rnmkr)
-  - Avg ROI depends on used strategy and investment per signal
-  - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/rnmkr-free-results.csv))
-  - Can have very long series of SL (investment strategy needs to count with that, so very small amount should be invested per trade)
-  - Good R:R ratio so single profitable trade can compensate multiple SLs
-  - Free sample of RNMKR VIP
-  - Admin provides logs on asking, communicates and is very helpful
-  - Works together with 8bit Algoz and Pablo's Crypto Club
-  - It is evolution of High Rollers group
-  - New algorithm was deployed on July 12th
-  - Algorithmically generated signals
-
-- 8Bit algoz
-  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/15160/overview)
-
 ## Very lossy and dangerous groups
 
-- BitsTurtle 
+- BitsTurtle
   - [Official website](https://bitsturtle.com)
   - [Public Telegram Channel](https://t.me/bitsturtle_community)
   - [Telegram BOT](https://t.me/bitsturtle_bot)
@@ -137,30 +158,24 @@ and what is the reality.
 ## Low profitable groups
 
 - AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
-  - Average ROI with recommended settings is ~~22.5%~~ to be determined (previous value was based on incorrect analysis)
+  - Previously might have been good, but now lossy for a very long time
+  - Not worth the effort and money
   - Human made signals
-  - Actively managed, they update the signals when situation changes
+  - Actively managed, they update the signals when the situation changes
   - Results are published here: <https://www.altsignals.io/results>
-  - They have the most comprehensive results report in the signal groups business.
+  - They have one of the most comprehensive results report in the signal groups business.
     You can find there the entry price, all take profit targets, stoploss and reached TP / SL.
   - They overshoot their results as everyone else does
-  - But they are profitable and they have been pretty much all the time
-  - Average ROI of signals is about 450% per month, total ROI is depending on actual investment and the risk management
-  - Recommended investment is 5% per signal - in that case, ROI is 22.5% per month
-  - Estimated ROI number is calculated based on following configuration:
-    - single entry point
-    - evenly distributed TP
-    - moving SL target 1
-  - Is under-performing lately
-  - [Backtracking results are here](./results/backtracking/altsignals-results.csv), but it needs to be taken with huge grain of salt.
+  - Has been under-performing lately
+  - [Backtracking results are here](./results/backtracking/altsignals-results.csv), but it needs to be taken with a huge grain of salt.
     They are difficult to backtrack as they don't just cancel the invalid signals, but they also change leverage or sometimes even TP.
 
 - AltSignals High Leverage Scalping <http://altsignals.io/>
-  - While the low leverage group is very good, high leverage group has been under-performing lately
+  - Last few months was able to generate very low profit
   - It is not always profitable, sometimes it ends the month in loss
   - Average ROI of signals is about 144% per month, total ROI is depending on actual investment  and the risk management
   - Recommended investment is 1-3% per signal, in that case ROI is about 1.44 - 4.32% per month
-  - Estimated ROI number is calculated based on following configuration:
+  - Estimated ROI number is calculated based on the following configuration:
     - single entry point
     - evenly distributed TP
     - moving SL target 1
@@ -168,18 +183,18 @@ and what is the reality.
 
 - Medabot
   - Very responsive community
-  - ROI 4% on bad market. Positioned as "easy passive income".
-  - Once per 2 month manual work required with "halted" positions.
+  - ROI 4% on a bad market. Positioned as "easy passive income".
+  - Once per 2 months manual work is required with "halted" positions.
 
 - Scalping 300% <https://t.me/Scalping_300>
   - The same as MCW Premium (VIP Channel)
   - Requires limit max trades to 10 and manual renter on duplicated signals.
-  - As result - not suitable for autotrading and backtesting.
-  - While probably not lossy if follow recommendations, still not worth efforts,
+  - As result not suitable for autotrading and backtesting.
+  - While probably not lossy if follow recommendations, still not worth the efforts
 
-- CoinCodeCap https://signals.coincodecap.com/
-  - Very poor performance un april-may 2023. PNL 45%, with 6% per trade (3% ROI)
-  - They are honest, and provide logs on request, even if result is bad.
+- CoinCodeCap <https://signals.coincodecap.com>
+  - Very poor performance in April-May 2023. PNL 45%, with 6% per trade (3% ROI)
+  - They are honest, and provide logs on request, even if the result is bad.
 
 ## Bad Groups and scammers
 
@@ -187,7 +202,7 @@ This section contains groups with fake reports OR rejected to provide logs.
 
 - Binance Killers (BK)
   - ROI is about 13% per month with 5% invested per signal with fine tuned cornix config
-  - Average PnL of signals is 260% per month (based on [backtracking](./results/backtracking/bk-results.csv)) 
+  - Average PnL of signals is 260% per month (based on [backtracking](./results/backtracking/bk-results.csv))
     with [following cornix config](./results/cornix-config/bk-cornix-config.json)
   - With usually used cornix config (Evenly distributed targets, Moving SL after target 1), PnL is smaller - 140% and ROI as well - 7%
   - 3 of the last 7 months lossy, average monthly loss of signals for these 3 months is 88%, -4.4% ROI
@@ -195,17 +210,25 @@ This section contains groups with fake reports OR rejected to provide logs.
   - Has been lying a lot in their PnL reports lately, they lie even about number of SLs
   - Very long term oriented, signals can be open for several months
 
-
 - Fed Russian Insiders (FRI)
   - Same as the Binance Killers?
+  - People reported long-term losses with them
 
 - Binance master
 
+- MYC
+
+- Megacrypto
+
 - MCW premium
   - Exact copy of Scalping 300%, but overpriced and with hidden stat in the channel
+  - People reported long-term losses with them
 
 - GG Shot <https://t.me/doublegtrading>
   - Scammers with fake reports. Support rejected a request for history logs before the purchase
+
+- W.D. Premium
+  - People reported long-term losses with them
 
 - Crypto Devil
   - Scammer, deletes SL
@@ -220,6 +243,11 @@ This section contains groups with fake reports OR rejected to provide logs.
 - Fixed Leverage VIP <https://dashboard.cornix.io/marketplace/group-details/13353/overview?pos=83>
   - scammers, fake reports (cut SL trades)
   - also sells "CRYPTO VULTURE" VIPs with fake reports.
+
+- Revolution
+
+- Jucyfields
+  - Scam
 
 ## Other
 
