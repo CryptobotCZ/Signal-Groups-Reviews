@@ -4,6 +4,7 @@ import * as zip from "https://deno.land/x/zip@v1.1.0/unzip.ts";
 import * as path from "https://deno.land/std/path/mod.ts";
 import * as fs from "https://deno.land/std@0.192.0/fs/mod.ts";
 import { open } from 'https://deno.land/x/open/index.ts';
+import { download } from "https://deno.land/x/download@v2.0.2/mod.ts";
 import realPath = Deno.realPath;
 
 
@@ -26,8 +27,11 @@ async function install() {
 
           console.log(`Downloading repository ${repo}...`);
 
-          await zip.unZipFromURL(url);
+          const zipFile = `${unzippedDirFileName}.zip`;
+          const res = await download(url, { file: zipFile, dir: '.' });
+          await zip.unZipFromFile(zipFile);
           await Deno.rename(unzippedDirFileName, filename);
+          await Deno.remove(res.fullPath);
      }
 
      async function prepareWorkingDirectory() {
@@ -326,7 +330,7 @@ yargs(Deno.args)
             type: 'number',
             default: 8080,
        })
-       
+
   }, async (argv: Arguments) => {
      debug = argv.debug;
      await runChartsServer(argv.port);
