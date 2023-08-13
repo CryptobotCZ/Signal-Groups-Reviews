@@ -238,7 +238,7 @@ This section contains groups with fake reports OR rejected to provide logs.
 - MonoCoin VIP <https://dashboard.cornix.io/marketplace/group-details/8668/overview>
   - Support has become silent after logs request
 
-- Fortune VIP
+- Fortune VIP <https://t.me/fortunenodeofficial>
 
 - Fixed Leverage VIP <https://dashboard.cornix.io/marketplace/group-details/13353/overview?pos=83>
   - scammers, fake reports (cut SL trades)
@@ -248,6 +248,40 @@ This section contains groups with fake reports OR rejected to provide logs.
 
 - Jucyfields
   - Scam
+
+- Lot of scam groups related together
+  - They usually link each other
+  - They tend to offer exclusive offer, limited VIP, join fast, secret deal and so on...
+  - <https://t.me/CryptoCoinsCoach>
+  - <https://t.me/Bitcoins>
+  - <https://t.me/Pumps>
+  - <https://t.me/Insider_leak_of_the_day>
+  - <https://t.me/Market>
+  - <https://t.me/cryptosignals>
+  - <https://t.me/BinanceWaves>
+  - <https://t.me/Forex_Tradings>
+  - <https://t.me/Coins>
+  - <https://t.me/cryptotrader>
+  - <https://t.me/JackDorseyCoins>
+  - <https://t.me/BlueWhaleCryptoTM>
+  - <https://t.me/crypto_musk1>
+  - <https://t.me/binance_360>
+  - <https://t.me/Greenrocksignal>
+  - <https://t.me/S_M_C_Traders>
+  - <https://t.me/Crypto_Safe_Calls>
+  - <https://t.me/Bitcoinkingdm>
+  - <https://t.me/BBB_Signals>
+  - <https://t.me/harmonicrypto>
+  - <https://t.me/Binance_PROs>
+  - <https://t.me/Cryptoccksignal>
+  - <https://t.me/Whales_Pumps>
+  - <https://t.me/gorilla_crypto>
+  - THE CRYPTO TRADER
+  - Coin Chief
+  - Crypto Downtown
+  - King Crypto
+  - CRYPTO WORLD UPDATES
+  - Crypto Bulls®
 
 ## Other
 
