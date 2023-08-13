@@ -122,7 +122,8 @@ async function analyzeSignals(
      ordersOutputPath: string,
      intermediateOutputPath: string,
      finalReportPath: string,
-     cornixConfig?: string
+     cornixConfig?: string,
+     exchange?: string
 ) {
      const cornixConfigAbsPath = cornixConfig != null ? await getAbsPath(cornixConfig) : null;
      const cornixConfigArg = cornixConfigAbsPath != null ? ['--cornixConfigFile', cornixConfigAbsPath] : [];
@@ -171,7 +172,7 @@ async function analyzeSignals(
                     'backtrack',
                     '--cachePath', `${config.paths['crypto-trade-backtracker']}/cache`,
                     '--fromDate', '1672534800000',
-                    '--downloadBinanceData',
+                    '--downloadExchangeData', '--exchange', exchange ?? 'binance',
                     '--detailedLog',
                    ...cornixConfigArg,
                     '--outputPath', intermediateOutputPath,
@@ -230,17 +231,20 @@ async function analyzeSignals(
      });
 }
 
-async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string) {
+async function analyzeSignalGroup(name: string, signals = 'generic', cornixConfigPath?: string, exchange: string = 'binance') {
      const workspace = path.resolve(config.paths.workspace); // path.join(Deno.cwd(), workspaceDirectoryName);
 
+     const exchangeSuffix = (exchange ?? 'binance') == 'binance' ? '' : `-${exchange}`;
+
      const inputPath = path.join(workspace, 'raw-data', name);
-     const ordersOutputPath = path.join(workspace, 'orders', name + '-orders.json');
-     const intermediateOutputPath = path.join(workspace, 'pre-processed', name + '-intermediate.json');
-     const finalReportPath = path.join(workspace, 'results', name + '-report.csv');
+     const ordersOutputPath = path.join(workspace, 'orders', `${name}${exchangeSuffix}-orders.json`);
+     const intermediateOutputPath = path.join(workspace, 'pre-processed', `${name}${exchangeSuffix}-intermediate.json`);
+     const finalReportPath = path.join(workspace, 'results',  `${name}${exchangeSuffix}-report.csv`);
 
      cornixConfigPath ??= path.join(workspace, 'cornix-config', name + '-cornix-config.json');
 
-     await analyzeSignals(signals.trim(), inputPath, ordersOutputPath, intermediateOutputPath, finalReportPath, cornixConfigPath);
+     await analyzeSignals(signals.trim(), inputPath, ordersOutputPath, intermediateOutputPath, finalReportPath, cornixConfigPath,
+          exchange);
 }
 
 //
@@ -308,7 +312,12 @@ yargs(Deno.args)
        type: 'boolean',
        default: true,
   })
-  .command('install', 'Install crypto analysis suite', (yargs: any) => {}, async (argv: Arguments) => {
+  .option('exchange', {
+     describe: 'Exchange to use',
+     type: 'string',
+     default: 'binance',
+})
+.command('install', 'Install crypto analysis suite', (yargs: any) => {}, async (argv: Arguments) => {
        await install();
   })
   .command('update', 'Update crypto analysis suite', (yargs: any) => {
@@ -318,7 +327,7 @@ yargs(Deno.args)
   .command(['analyze <directory> <signals>'], 'Analyze group', () => {}, async (argv: any) => {
      debug = argv.debug;
      args = argv;
-     await analyzeSignalGroup(argv.directory, argv.signals);
+     await analyzeSignalGroup(argv.directory, argv.signals, undefined, argv.exchange);
   })
   .command(['supported-groups'], 'Show supported groups', () => {}, async (argv: any) => {
      debug = argv.debug;
