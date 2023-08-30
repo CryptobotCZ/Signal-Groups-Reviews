@@ -122,6 +122,13 @@ and what is the reality.
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
   - didn't provide logs
 
+- Future Bull
+  - [Public Telegram Channel](https://t.me/futurebullsignals)
+  - [Admin - future_bull](https://t.me/future_bull)
+  - Seems to be good for manual trading
+  - Has Cornix support but admin doesn't like cornix and posts only few signals there
+  - Has good risk-reward ratio
+
 ## Very lossy and dangerous groups
 
 - BitsTurtle
@@ -140,6 +147,17 @@ and what is the reality.
   - suffers from cornix bugs when multiple trades with the same coins are open
   - difficult to follow reporting - something must be followed on cornix, something on bybit, one must watch everything
   - on the other hand, admins are very helpful
+
+- Medabot
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/25337/overview)
+  - Very responsive community
+  - ROI 4% on a bad market. Positioned as "easy passive income".
+  - Once per 2 months manual work is required with "halted" positions.
+  - Can have lot of small 1-2$ wins and work well for certain time
+  - But when something goes wrong, losses are huge
+  - Based on user reports, single largest loss can be as bad as 1400x
+    bigger then single largest gain 
+  - SL is far far away, risk-reward ratio is very bad
 
 - Autotrade Futures (Alex Friedman)
   - Default cornix config has too many SL
@@ -180,11 +198,6 @@ and what is the reality.
     - evenly distributed TP
     - moving SL target 1
   - BOT generated
-
-- Medabot
-  - Very responsive community
-  - ROI 4% on a bad market. Positioned as "easy passive income".
-  - Once per 2 months manual work is required with "halted" positions.
 
 - Scalping 300% <https://t.me/Scalping_300>
   - The same as MCW Premium (VIP Channel)
