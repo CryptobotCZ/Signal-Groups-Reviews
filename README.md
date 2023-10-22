@@ -10,11 +10,21 @@ and what is the reality.
 
 ## Good Groups
 
+- CryptoKey Club
+  - [Public Telegram Channel](https://t.me/crypto_key_signals)
+  - [Admin - CryptoJay](https://t.me/JayTech0)
+  - Expected ROI is 16% per month
+  - They have Copy Trading on TraderWagon
+  - Perfect community, if you wish to learn how to trade
+  - They provide TradingView Indicator
+
 - KAT Crypto Premium / Street
   - [Public Telegram Channel](https://t.me/katcryptostreet)
   - [Admin - KATadmin1](https://t.me/KATadmin1)
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
-  - Has [Copy Trading on BingX](https://bingx.com/en-us/CopyTrading/1164673816908779525/?type=&apiIdentity=1185033748341235718)
+  - Has Copy Trading
+    - Copy trading had a lossy period recently
+    - Now managed by different trader, Adam - we need to wait to see his results
   - Can have bad week sometime, but monthly stat is positive
   - Use 3% per trade, and don't touch recommended settings
   - Probably 20-30% ROI (not yet verified)
@@ -27,6 +37,7 @@ and what is the reality.
   - [Copy Trading on ByBit](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=UMuwFxr5CFlWFtaThxZwMg%3D%3D)
   - [Copy Trading on ByBit - Special Grid BOT](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=gXlZuUW4DR2rKxcJa6iARw%3D%3D)
   - [Admin - MoonrakerCosmo](https://t.me/MoonrakerCosmo)
+  - Had very rough time lately with losses
 
 - High Rollers Vip
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/5097/overview)
@@ -50,6 +61,7 @@ and what is the reality.
   - It is an evolution of High Rollers group
   - New algorithm was deployed on July 12th
   - Algorithmically generated signals
+  - Also had quite rough September/October, lot of losses, now about breakeven
 
 - 8Bit algoz
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/15160/overview)
@@ -75,14 +87,6 @@ and what is the reality.
   - Very well handled even dangerous market situations
   - Experienced trader
 
-- CryptoKey Club
-  - [Public Telegram Channel](https://t.me/crypto_key_signals)
-  - [Admin - CryptoJay](https://t.me/JayTech0)
-  - Expected ROI is 16% per month
-  - Human made signals
-  - Perfect community, if you wish to learn how to trade
-  - Not ready if you wish "just quick-setup cornix and forget"
-
 - The Accountant
   - [Public Telegram Channel](https://t.me/TheAccountantSignals)
   - [Admin - The Accountant](https://t.me/BigBedTrader)
@@ -90,16 +94,6 @@ and what is the reality.
 
 - Bullstar
 - Coinsignals
-
-### No Cornix Support
-
-- Wallstreet Queen
-  - [Public Telegram Channel](https://t.me/wallstreetqueenofficial)
-  - [Admin - Wall Street Queen](https://t.me/wallstreetqueenadmin)
-  - ROI is about 18% per month with 5% invested per signal
-  - Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/wallstreet-queen-results.csv))
-  - Human made signals
-  - Doesn't support cornix
 
 ## Groups on the radar
 
@@ -121,13 +115,6 @@ and what is the reality.
 - MonoCoin VIP - Crypto Futures
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
   - didn't provide logs
-
-- Future Bull
-  - [Public Telegram Channel](https://t.me/futurebullsignals)
-  - [Admin - future_bull](https://t.me/future_bull)
-  - Seems to be good for manual trading
-  - Has Cornix support but admin doesn't like cornix and posts only few signals there
-  - Has good risk-reward ratio
 
 ## Very lossy and dangerous groups
 
@@ -156,7 +143,7 @@ and what is the reality.
   - Can have lot of small 1-2$ wins and work well for certain time
   - But when something goes wrong, losses are huge
   - Based on user reports, single largest loss can be as bad as 1400x
-    bigger then single largest gain 
+    bigger then single largest gain
   - SL is far far away, risk-reward ratio is very bad
 
 - Autotrade Futures (Alex Friedman)
@@ -209,9 +196,31 @@ and what is the reality.
   - Very poor performance in April-May 2023. PNL 45%, with 6% per trade (3% ROI)
   - They are honest, and provide logs on request, even if the result is bad.
 
+### No Cornix Support
+
+- Wallstreet Queen
+  - [Public Telegram Channel](https://t.me/wallstreetqueenofficial)
+  - [Admin - Wall Street Queen](https://t.me/wallstreetqueenadmin)
+  - ~~ROI is about 18% per month with 5% invested per signal~~
+  - ~~Average PnL of signals is 373% per month (based on [backtracking](./results/backtracking/wallstreet-queen-results.csv))~~
+  - Lately results were very bad and very lossy
+  - Human made signals
+  - Doesn't support cornix
+
 ## Bad Groups and scammers
 
 This section contains groups with fake reports OR rejected to provide logs.
+
+- Future Bull
+  - [Public Telegram Channel](https://t.me/futurebullsignals)
+  - [Admin - future_bull](https://t.me/future_bull)
+  - Seems to be good for manual trading
+  - Has Cornix support but admin doesn't like cornix and posts only few signals there
+  - Has good risk-reward ratio
+  - Some people reported he might be stealing some other groups signals
+  - He was running "managed investment" scheme where he wanted people to send him money and he would take care of it.
+    There are reports that he took such a good care of the money that he is now investigated by a police. Telegram channel is now removed.
+  - Last statement is it got hacked
 
 - Binance Killers (BK)
   - ROI is about 13% per month with 5% invested per signal with fine tuned cornix config
