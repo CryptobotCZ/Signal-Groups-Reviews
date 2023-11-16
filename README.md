@@ -26,18 +26,21 @@ and what is the reality.
     - Copy trading had a lossy period recently
     - Now managed by different trader, Adam - we need to wait to see his results
   - Can have bad week sometime, but monthly stat is positive
+    - (for example in beginning of November got hit with series of very bad SLs but managed to recover swiftly)
   - Use 3% per trade, and don't touch recommended settings
   - Probably 20-30% ROI (not yet verified)
   - Admin communicates very well, is even part of our group chat
   - Provides cornix logs on asking
 
 - Moonraker
+  - [Website](https://moonrakercrypto.com/)
   - [Public Telegram Channel](https://t.me/MoonrakerCryptoLITE)
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/3435/overview)
+  - [Admin - MoonrakerCosmo](https://t.me/MoonrakerCosmo)
   - [Copy Trading on ByBit](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=UMuwFxr5CFlWFtaThxZwMg%3D%3D)
   - [Copy Trading on ByBit - Special Grid BOT](https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=gXlZuUW4DR2rKxcJa6iARw%3D%3D)
-  - [Admin - MoonrakerCosmo](https://t.me/MoonrakerCosmo)
-  - Had very rough time lately with losses
+  - Had very rough time lately with losses in his main channel
+  - But his Alts channel has been performing very well
 
 - High Rollers Vip
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/5097/overview)
@@ -95,7 +98,28 @@ and what is the reality.
 - Bullstar
 - Coinsignals
 
+## Good groups for manual trading
+
+- Delbert's Trading Team
+  - [Public Telegram Channel](https://t.me/delbert_trading)
+  - [Admin - aiden_trader](https://t.me/aiden_trader)
+  - Makes exceptionally great swing trades with very high R:R
+  - Has also scalp trading channel
+
+- Crypto Age
+  - [Public Telegram Channel](https://t.me/cryptoage_free)
+  - Manual trading
+  - Very good results
+  - Hasn't been very active lately
+
 ## Groups on the radar
+
+- Rapid Scalpers
+  - [Public Telegram Channel](https://t.me/+HxNgwAknSRFkMmY6)
+  - [Admin - LouisRevaz](https://t.me/LouisRevaz)
+  - Manual trading
+  - Scalp signals
+  - Is running 10x challenge on Bitget
 
 - Sublime
 - WCSE
@@ -115,6 +139,32 @@ and what is the reality.
 - MonoCoin VIP - Crypto Futures
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
   - didn't provide logs
+
+- AltCenter
+  - [Public Telegram Channel](https://t.me/Altcenter)
+  - [Website](https://best-trading-signals.com)
+  - I have reports it made nice profit even in September-October period
+
+- Hafizebot
+  - [Website](https://www.hafizebot.com/)
+  - Automatically generated signals
+  - Also I have reports about good performance of this bot
+
+- Prosperity Crypto
+  - [Cornix Marketplace - Swing](https://dashboard.cornix.io/marketplace/group-details/33918/overview)
+  - [Cornix Marketplace - Scalp](https://dashboard.cornix.io/marketplace/group-details/33917/overview)
+  - New group, not enough data
+  - Looks interesting
+  - Offers free trial
+
+- SMC Traders
+  - [Public Telegram Channel](https://t.me/S_M_C_Traders)
+
+- Crypto Trends Scalper
+
+- Wolf of Trading
+
+- The American Trader
 
 ## Very lossy and dangerous groups
 
@@ -160,6 +210,18 @@ and what is the reality.
   - Sometime post signals without SL
   - Looks profitable, but with reasons above - probably worth find something different.
 
+- AltSignals High Leverage Scalping <http://altsignals.io/>
+  - Sometimes it can generate a very low profit
+  - Mostly very lossy
+  - Absolutely not worth the price, even if it was free it would be too expensive
+  - Average ROI of signals is about 82% per month for this year, total ROI depends on actual investment  and risk management
+  - Recommended investment is 1-3% per signal, in that case ROI is about 0.8 - 2.4% per month
+  - Estimated ROI number is calculated based on the following configuration:
+    - single entry point
+    - evenly distributed TP
+    - moving SL target 1
+  - BOT generated
+
 ## Low profitable groups
 
 - AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
@@ -174,17 +236,6 @@ and what is the reality.
   - Has been under-performing lately
   - [Backtracking results are here](./results/backtracking/altsignals-results.csv), but it needs to be taken with a huge grain of salt.
     They are difficult to backtrack as they don't just cancel the invalid signals, but they also change leverage or sometimes even TP.
-
-- AltSignals High Leverage Scalping <http://altsignals.io/>
-  - Last few months was able to generate very low profit
-  - It is not always profitable, sometimes it ends the month in loss
-  - Average ROI of signals is about 144% per month, total ROI is depending on actual investment  and the risk management
-  - Recommended investment is 1-3% per signal, in that case ROI is about 1.44 - 4.32% per month
-  - Estimated ROI number is calculated based on the following configuration:
-    - single entry point
-    - evenly distributed TP
-    - moving SL target 1
-  - BOT generated
 
 - Scalping 300% <https://t.me/Scalping_300>
   - The same as MCW Premium (VIP Channel)
@@ -271,6 +322,14 @@ This section contains groups with fake reports OR rejected to provide logs.
 - Jucyfields
   - Scam
 
+- ESTR (Freemium Signals)®
+  - Lossy group
+  - Hides losses
+  - Stole channel from Crypto Vikings
+  - Steals signals from other channels
+  - Was never profitable in long term period
+  - Does investment scam now
+
 - Lot of scam groups related together
   - They usually link each other
   - They tend to offer exclusive offer, limited VIP, join fast, secret deal and so on...
@@ -308,8 +367,8 @@ This section contains groups with fake reports OR rejected to provide logs.
 ## Other
 
 - AltSignals AltAlgo Indicator <https://www.altsignals.io/indicator>
-  - This is more a tool for skilled traders then fully automated signal group
-  - TradingView indicator, tool for technical analysis
+  - This is more a tool for skilled traders than a fully automated signal group
+  - TradingView indicator, a tool for technical analysis
   - Allows you to build your own signals based on the AltAlgo indicator
   - Also provides many signal groups for various coins (currently about 20)
   - Available also for holders of [50k ASI tokens](https://token.altsignals.io?referral=b1544117-07b2-49d7-9168-625f175e1f71)
@@ -319,8 +378,8 @@ This section contains groups with fake reports OR rejected to provide logs.
   - BOT generated signals
   - Uses 20x leverage
   - Does not perform well in low volume markets
-  - Be careful to watch the market trends and if market is trending up, don't use SHORT signals, if trend is down, don't use LONG
-  - Generally speaking, I would not recommend it for beginners and for people looking for fully automated solution
+  - Be careful to watch the market trends and if the market is trending up, don't use SHORT signals, if the trend is down, don't use LONG
+  - Generally speaking, I would not recommend it for beginners and for people looking for a fully automated solution
 
 ## Tools for testing signal groups
 
