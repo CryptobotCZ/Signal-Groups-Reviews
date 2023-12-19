@@ -6,7 +6,12 @@ For good enough groups we can share a recommended cornix configuration and our m
 We can also compare their fake reports with our real experience to find out how much are the official reports misleading
 and what is the reality.
 
-<https://t.me/cornixcommunity> chat group for discussion.
+<https://t.me/cornixcommunity> our main chat group for discussion. We share the experience with cornix and trading in general there.
+We talk about channels and try to find the good ones.
+
+<https://t.me/+SeSx1DZbFzs1MzY6> chat group used for rating signals quality. Very good for learning. Usually group admin (Jake)
+ or sometimes other members from the group analyze a signal, pinpoint the strong and weak points and post an improved signal
+  which is good for trading.
 
 ## Good Groups
 
@@ -14,23 +19,10 @@ and what is the reality.
   - [Public Telegram Channel](https://t.me/crypto_key_signals)
   - [Admin - CryptoJay](https://t.me/JayTech0)
   - Expected ROI is 16% per month
-  - They have Copy Trading on TraderWagon
+  - They have Copy Trading on Binance (formerly on TraderWagon)
   - Perfect community, if you wish to learn how to trade
   - They provide TradingView Indicator
-
-- KAT Crypto Premium / Street
-  - [Public Telegram Channel](https://t.me/katcryptostreet)
-  - [Admin - KATadmin1](https://t.me/KATadmin1)
-  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
-  - Has Copy Trading
-    - Copy trading had a lossy period recently
-    - Now managed by different trader, Adam - we need to wait to see his results
-  - Can have bad week sometime, but monthly stat is positive
-    - (for example in beginning of November got hit with series of very bad SLs but managed to recover swiftly)
-  - Use 3% per trade, and don't touch recommended settings
-  - Probably 20-30% ROI (not yet verified)
-  - Admin communicates very well, is even part of our group chat
-  - Provides cornix logs on asking
+  - It has been bit underperforming lately
 
 - Moonraker
   - [Website](https://moonrakercrypto.com/)
@@ -65,15 +57,12 @@ and what is the reality.
   - New algorithm was deployed on July 12th
   - Algorithmically generated signals
   - Also had quite rough September/October, lot of losses, now about breakeven
+  - New updated channel RNMKR PRO has been doing very well so far
 
 - 8Bit algoz
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/15160/overview)
-
-- Pablo's Crypto Club
-  - [Telegram Bot](https://t.me/PablosCryptobot)
-  - Pablo is working together with Masta and 8Bit Algoz
-  - From time to time he runs 100-1000 challenge
-  - He is focused on trading education
+  - Generates huge amount of signals
+  - Aims for quick trades with small profits
 
 - Orchid
   - [Public Telegram Channel](https://t.me/OrchidAcademy)
@@ -89,6 +78,7 @@ and what is the reality.
   - Human made signals
   - Very well handled even dangerous market situations
   - Experienced trader
+  - Lot of people have been gaining huge profits with this group lately
 
 - The Accountant
   - [Public Telegram Channel](https://t.me/TheAccountantSignals)
@@ -97,6 +87,11 @@ and what is the reality.
 
 - Bullstar
 - Coinsignals
+
+- Bitcoin Bullets
+  - [Public Telegram Channel](https://t.me/BitcoinBullets)
+  - [Admin - Joe1322](https://t.me/joe1322)
+
 
 ## Good groups for manual trading
 
@@ -114,12 +109,18 @@ and what is the reality.
 
 ## Groups on the radar
 
-- Rapid Scalpers
-  - [Public Telegram Channel](https://t.me/+HxNgwAknSRFkMmY6)
-  - [Admin - LouisRevaz](https://t.me/LouisRevaz)
-  - Manual trading
-  - Scalp signals
-  - Is running 10x challenge on Bitget
+- Daniels Crypto Hub
+  - [Public Telegram Channel](https://t.me/danielscryptohub)
+  - [Admin - Daisy Daniel](https://t.me/daisy_daniel)
+  - Looks like a good channel, we have some reports from people saying it's very good
+  - Not enough longer-term data available yet, more evaluation and data collection is needed
+
+- Pablo's Crypto Club
+  - [Telegram Bot](https://t.me/PablosCryptobot)
+  - Pablo is working together with Masta and 8Bit Algoz
+  - From time to time he runs 100-1000 challenge
+    - last challenge didn't work out very well
+  - He is focused on trading education
 
 - Sublime
 - WCSE
@@ -133,8 +134,6 @@ and what is the reality.
   - Current aggregated trade size is 250K, already visible on candles.
 
 - Crypto rise
-- Bitcoin Bullets
-  - Some affiliation with BK and FRI
 
 - MonoCoin VIP - Crypto Futures
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/8668/overview?pos=96)
@@ -156,15 +155,23 @@ and what is the reality.
   - New group, not enough data
   - Looks interesting
   - Offers free trial
+  - They have new algorithms since December
 
 - SMC Traders
   - [Public Telegram Channel](https://t.me/S_M_C_Traders)
+  - [Admin - Mr_Kelvinn](https://t.me/Mr_Kelvinn)
+  - Lately also lot of losses
+
+- BTC Scalper
+  - [Public Telegram Channel - BTC Sharks](https://t.me/BTCsharksOfficial)
+  - [Admin - Mr_Big_whale](https://t.me/Mr_Big_whale)
+  - Initial results looked promising
+  - Lately lot of SL with huge losses
+  - Not enough data for any definitive statement, but so far not impressive
 
 - Crypto Trends Scalper
 
 - Wolf of Trading
-
-- The American Trader
 
 ## Very lossy and dangerous groups
 
@@ -225,17 +232,40 @@ and what is the reality.
 ## Low profitable groups
 
 - AltSignals Binance Futures (Low Leverage) <http://altsignals.io/>
-  - Previously might have been good, but now lossy for a very long time
-  - Not worth the effort and money
+  - Up until September they have been very bad and lossy
+  - Since September they have new trader
+  - New trading strategy seems solid
+    - It is focused on the longer term highly profitable swing trades with very good R:R ratio
+  - October and November results are impressive, one more good month and I will move them to profitable groups
+  - ~~Not worth the effort and money~~
   - Human made signals
   - Actively managed, they update the signals when the situation changes
   - Results are published here: <https://www.altsignals.io/results>
-  - They have one of the most comprehensive results report in the signal groups business.
+  - They have one of the most comprehensive results reports in the signal group business.
     You can find there the entry price, all take profit targets, stoploss and reached TP / SL.
-  - They overshoot their results as everyone else does
+  - They overshoot their results as everyone else does (counting just highest reached TP)
   - Has been under-performing lately
   - [Backtracking results are here](./results/backtracking/altsignals-results.csv), but it needs to be taken with a huge grain of salt.
     They are difficult to backtrack as they don't just cancel the invalid signals, but they also change leverage or sometimes even TP.
+
+- KAT Crypto Premium / Street
+  - [Public Telegram Channel](https://t.me/katcryptostreet)
+  - [Admin - KATadmin1](https://t.me/KATadmin1)
+  - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
+  - Has Copy Trading
+    - Copy trading had a lossy period recently
+    - Now managed by different trader, Adam - we need to wait to see his results
+    - Mid december - copy trading results are good!
+  - Now there are multiple copy trading channels:
+    - 10x challenge
+    - Channel managed by KAT and Adam
+  - Can have a bad week sometime, but monthly stat is usually positive
+    - (for example in the beginning of November got hit with a series of very bad SLs but managed to recover swiftly)
+  - Had very bad November (almost 50% loss)
+  - Use 3% per trade, and don't touch recommended settings
+  - Probably 20-30% ROI (not yet verified)
+  - Admin communicates very well, is even part of our group chat
+  - Provides cornix logs on asking
 
 - Scalping 300% <https://t.me/Scalping_300>
   - The same as MCW Premium (VIP Channel)
@@ -249,6 +279,14 @@ and what is the reality.
 
 ### No Cornix Support
 
+- The American Trader
+  - [Public Telegram Channel](https://t.me/+X4gPFfE6Ouo3YThk)
+  - [Admin - @TheAmericanTrader](https://t.me/TheAmericanTrader)
+  - Is running 1k to 10k challenge
+    - Results are so far very good!
+  - I heard VIP group is not as good as the challenge one, but the challenge is excellent!
+  - In the challenge, he focuses on swing trades with a very high R:R ratio
+
 - Wallstreet Queen
   - [Public Telegram Channel](https://t.me/wallstreetqueenofficial)
   - [Admin - Wall Street Queen](https://t.me/wallstreetqueenadmin)
@@ -258,9 +296,43 @@ and what is the reality.
   - Human made signals
   - Doesn't support cornix
 
+- Rapid Scalpers
+  - [Public Telegram Channel](https://t.me/+HxNgwAknSRFkMmY6)
+  - [Admin - LouisRevaz](https://t.me/LouisRevaz)
+  - Manual trading
+  - Human made signals
+  - Scalp trades
+  - Signals are sometimes so fast they are hard to catch and execute
+  - Sometimes signals do not have SL, be aware
+  - Is running 10x challenge on Bitget
+  - No cornix support but promised to integrate Cornix later
+
+- Elons Trading Club
+  - [Public Telegram Channel](https://t.me/elonstrading_club)
+  - [Admin - elonsclub](https://t.me/elonsclub)
+  - Manual trading
+  - Human made signals
+  - It is reported to be highly profitable
+  - Focused on swing trading
+  - Admin provides lot of guidance
+
 ## Bad Groups and scammers
 
 This section contains groups with fake reports OR rejected to provide logs.
+
+- Binance Killers (BK)
+  - ROI is about 13% per month with 5% invested per signal with fine tuned cornix config
+  - Average PnL of signals is 260% per month (based on [backtracking](./results/backtracking/bk-results.csv))
+    with [following cornix config](./results/cornix-config/bk-cornix-config.json)
+  - With usually used cornix config (Evenly distributed targets, Moving SL after target 1), PnL is smaller - 140% and ROI as well - 7%
+  - 3 of the last 7 months lossy, average monthly loss of signals for these 3 months is 88%, -4.4% ROI
+  - Very misleading and inflated PnL reports
+  - Has been lying a lot in their PnL reports lately, they lie even about number of SLs
+  - Very long-term oriented, signals can be open for several months
+
+- Fed Russian Insiders (FRI)
+  - Same as the Binance Killers?
+  - People reported long-term losses with them
 
 - Future Bull
   - [Public Telegram Channel](https://t.me/futurebullsignals)
@@ -273,19 +345,6 @@ This section contains groups with fake reports OR rejected to provide logs.
     There are reports that he took such a good care of the money that he is now investigated by a police. Telegram channel is now removed.
   - Last statement is it got hacked
 
-- Binance Killers (BK)
-  - ROI is about 13% per month with 5% invested per signal with fine tuned cornix config
-  - Average PnL of signals is 260% per month (based on [backtracking](./results/backtracking/bk-results.csv))
-    with [following cornix config](./results/cornix-config/bk-cornix-config.json)
-  - With usually used cornix config (Evenly distributed targets, Moving SL after target 1), PnL is smaller - 140% and ROI as well - 7%
-  - 3 of the last 7 months lossy, average monthly loss of signals for these 3 months is 88%, -4.4% ROI
-  - Very misleading and inflated PnL reports
-  - Has been lying a lot in their PnL reports lately, they lie even about number of SLs
-  - Very long term oriented, signals can be open for several months
-
-- Fed Russian Insiders (FRI)
-  - Same as the Binance Killers?
-  - People reported long-term losses with them
 
 - Binance master
 
