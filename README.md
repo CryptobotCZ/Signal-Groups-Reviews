@@ -92,6 +92,17 @@ We talk about channels and try to find the good ones.
   - [Public Telegram Channel](https://t.me/BitcoinBullets)
   - [Admin - Joe1322](https://t.me/joe1322)
 
+- Signals Discussion Group
+  - [Telegram Channel](<https://t.me/+SeSx1DZbFzs1MzY6>)
+  - Chat group used for rating signals quality and trading
+  - Very good for learning. Usually group admin (Jake) or sometimes other members from the group analyze a signal,
+    pinpoint the strong and weak points and post an improved signal which is good for trading.
+
+- Jake's PREMIUM Crypto Signals
+  - [Admin - Jake](https://t.me/corvette_jake)
+  - Jake's VIP group with his own signals
+  - Very good R:R
+  - Conservative setups
 
 ## Good groups for manual trading
 
@@ -253,19 +264,21 @@ We talk about channels and try to find the good ones.
   - [Admin - KATadmin1](https://t.me/KATadmin1)
   - [Cornix Marketplace](https://dashboard.cornix.io/marketplace/group-details/11161/overview)
   - Has Copy Trading
-    - Copy trading had a lossy period recently
+    - Copy trading had a lossy period during Oct/Nov
     - Now managed by different trader, Adam - we need to wait to see his results
-    - Mid december - copy trading results are good!
+    - Mid december - copy trading results very good!
+    - Unfortunately it didn't survive the January 3rd crash and got liquidated!
   - Now there are multiple copy trading channels:
     - 10x challenge
     - Channel managed by KAT and Adam
   - Can have a bad week sometime, but monthly stat is usually positive
     - (for example in the beginning of November got hit with a series of very bad SLs but managed to recover swiftly)
   - Had very bad November (almost 50% loss)
-  - Use 3% per trade, and don't touch recommended settings
-  - Probably 20-30% ROI (not yet verified)
   - Admin communicates very well, is even part of our group chat
   - Provides cornix logs on asking
+  - Based on yearly log for 2023 it seems this channel can make lot of money, but has huge problem with consistency and
+     periods where it can lose all the gains
+  - My recommendation would be to always take off some portion of gains (50%?) at the end of each month
 
 - Scalping 300% <https://t.me/Scalping_300>
   - The same as MCW Premium (VIP Channel)
